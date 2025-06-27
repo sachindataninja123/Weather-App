@@ -15,4 +15,4 @@ A responsive web app that displays real-time weather information using the OpenW
 - Clean and simple UI
 
   ## Screenshot
-  
+  https://github.com/sachindataninja123/Weather-App/blob/71557fc7db191dc24c5021ee8cbf487e024c548d/Screenshot%202025-06-27%20234707.png
