@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  gap: 2rem;
+  scroll-behavior: smooth;
+}
+.heading {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  width: 42rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+.search_box {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.weather_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  flex: 1;
+  border: none;
+  background-color: black;
+  color: #fff;
+  outline: none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 1.1rem;
+}
+input[type="text"]:focus {
+  background-color: black;
+  color: white;
+  border: 1px solid #43cea2;
+}
+input::placeholder {
+  color: #f1e1e1;
+}
+.check-btn {
+  margin-left: 0.3rem;
+  padding: 0.45rem 1rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.check-btn:hover {
+  background: transparent;
+  border: 1px solid #43cea2;
+}
+.weather_city {
+  font-size: 2.5rem;
+}
+.weather_search {
+  position: relative;
+}
+.weather_search i {
+  position: absolute;
+  color: white;
+  left: 0.8rem;
+  top: 0.9rem;
+  font-size: 15px;
+  color: #fff;
+}
+.weather_body {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 4rem;
+}
+.weather_info {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+.weather_info i {
+  font-size: 1.6rem;
+}
+.weather_temperature {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.weather_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.weather_icon {
+  margin: -3.1rem;
+}
+.weather_forecast {
+  color: white;
+  background-color: black;
+  border-radius: 3.6rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+}
+.weather_minmax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4rem;
+}
+.weather_card {
+  background: rgba(66, 66, 66, 0.15);
+  backdrop-filter: blur(4px);
+  width: 19rem;
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  box-shadow: 5px 5px 15px 0 rgba(2, 2, 2, 0.3);
+  margin: 0.3rem;
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+}
+
+@media (width <= 980px) {
+  .container {
+    width: 35rem;
+  }
+  .weather_info {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+  .weather_card {
+    width: 15rem;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 5px 5px 15px 0 rgba(2, 2, 2, 0.3);
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+}
+@media (width <= 768px) {
+  .container {
+    width: 23.5rem;
+  }
+  .weather_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .weather_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -0.5rem;
+  }
+  .check-btn {
+    margin-top: 0.6rem;
+    margin-right: 14rem;
+  }
+  .heading{
+    margin-top: -2rem;
+    font-size:2.5rem ;
+  }
+  .weather_card {
+    width: 20rem;
+    height: 4.6rem;
+  }
+  input {
+  padding: 0.8rem 3.1rem;
+  padding-left: 2.4rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 1.1rem;
+  font-size: 1.3rem;
+}
+.weather_search i {
+  position: absolute;
+  color: white;
+  left: 1rem;
+  top: 1.25rem;
+  font-size: 15px;
+  color: #fff;
+}
+}
+
