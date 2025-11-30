@@ -1,6 +1,9 @@
 # Weather-App
 A responsive web app that displays real-time weather information using the OpenWeatherMap API.
 
+🌐 View Live
+https://nowwweatherly.netlify.app/
+
 ##  Tech Stack
 - HTML
 - CSS
